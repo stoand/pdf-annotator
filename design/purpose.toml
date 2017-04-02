@@ -1,0 +1,7 @@
+# project purpose and definition documentation
+
+[REQ-purpose]
+text = '''
+The purpose of this project is to allow import PDF an annotate them
+in a conventient in stylish way.
+'''

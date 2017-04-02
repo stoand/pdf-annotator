@@ -1,0 +1,36 @@
+[SPC-comment-box]
+text ='''
+When clicking anywhere on a PDF a comment box should be added
+on the closes side. This comment box allows users to specify the contents
+of the comment or remove it.
+
+The comment box will contain 1 input field and 3 buttons:
+"Remove" (only if comment is being updated), "Cancel", "Update/Add".
+'''
+
+[SPC-comment-add]
+partof = "SPC-comment-box"
+text ='''
+Visible when: comment is initially being added.
+Disabled when: comment text is empty
+'''
+
+[SPC-comment-update]
+partof = "SPC-comment-box"
+text ='''
+Visible when: comment already existed and comment text is not empty
+Disabled when: comment text has not been updated
+The add button will only be visible when a comment.
+'''
+
+[SPC-comment-remove]
+partof = "SPC-comment-box"
+text ='''
+Visible when: comment already existed
+'''
+
+[SPC-comment-canceledit]
+partof = "SPC-comment-box"
+text ='''
+This will close the comment edit box without saving anything.
+'''

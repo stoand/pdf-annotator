@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@glimmer/application": "^0.4.0",
+    "@glimmer/application-pipeline": "^0.5.2",
+    "@glimmer/resolver": "^0.3.0",
+    "react": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "typescript": "^2.2.2",
+    "wallaby-webpack": "^0.0.38",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "name": "pdf-annotator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

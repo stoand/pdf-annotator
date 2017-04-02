@@ -1,0 +1,9 @@
+[REQ-pdf-import]
+text = '''
+Users should be able to import a PDF for annotation with an "import" button.
+'''
+
+[REQ-pdf-close]
+text = '''
+Users should be able to close a PDF "close" button.
+'''
