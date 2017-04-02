@@ -6,9 +6,13 @@ import * as React from 'react';
 import { commentsReducer } from './comment/comment.red';
 import { pdfReducer } from './pdf-toolbar/pdf-toolbar.red';
 
+import { PdfToolbar } from './pdf-toolbar/pdf-toolbar';
+
+import './app.less';
+
 let store = createStore(combineReducers({
     comments: commentsReducer,
     pdf: pdfReducer,
 }))
 
-render(<div>asdf</div>, document.querySelector('body'))
+render(PdfToolbar(), document.querySelector('body'))
