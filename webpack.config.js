@@ -1,5 +1,6 @@
 let HtmlPlugin = require('webpack-html-plugin');
 let path = require('path');
+let webpack = require('webpack');
 
 module.exports = {
     entry: './src/app',
@@ -40,5 +41,6 @@ module.exports = {
             title: 'PDF Annotater',
             filename: './index.html',
         }),
+        new webpack.ProvidePlugin({ React: 'react' }),
     ],
 }

@@ -1,18 +1,17 @@
-import { createStore, combineReducers } from 'redux';
-import { Provider } from 'react-redux';
 import { render } from 'react-dom';
-import * as React from 'react';
+import { Provider } from 'react-redux';
+import { combineReducers, createStore } from 'redux';
 
-import { commentsReducer } from './comment/comment.red';
-import { pdfReducer } from './pdf-toolbar/pdf-toolbar.red';
+import { commentsReducer } from './comment/comment.reducers';
+import { pdfReducer } from './pdf-toolbar/pdf-toolbar.reducers';
 
 import { PdfToolbar } from './pdf-toolbar/pdf-toolbar';
 
 import './app.less';
 
-let store = createStore(combineReducers({
+const store = createStore(combineReducers({
     comments: commentsReducer,
     pdf: pdfReducer,
-}))
+}));
 
-render(PdfToolbar(), document.querySelector('body'))
+render(PdfToolbar(), document.querySelector('body'));

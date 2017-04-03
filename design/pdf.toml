@@ -3,3 +3,20 @@ text = '''
 Users should be able to import a PDF for annotation with an "import" button.
 This will close the previously opened PDF.
 '''
+
+[SPC-pdf-import]
+text = '''
+The pdf import button will open a dialog that allows the user to upload a file.
+For now no loading progress indication will be added.
+'''
+
+[SPC-pdf-view] 
+text = '''
+In this area pages from the loaded pdf are displayed without borders or scrollbars.
+The pdf view components takes a PDF url.
+'''
+
+[TST-pdf-view] 
+text = '''
+Assert that rendering a PDF from a url works.
+'''
