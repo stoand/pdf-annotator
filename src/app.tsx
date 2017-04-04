@@ -1,3 +1,4 @@
+import 'es6-promise';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { combineReducers, createStore } from 'redux';
@@ -14,4 +15,6 @@ const store = createStore(combineReducers({
     pdf: pdfReducer,
 }));
 
-render(PdfToolbar(), document.querySelector('body'));
+const root = document.createElement('div');
+document.body.appendChild(root);
+render(PdfToolbar(), root);

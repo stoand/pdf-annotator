@@ -1,0 +1,10 @@
+[SPC-pdf-view] 
+text = '''
+In this area pages from the loaded pdf are displayed without borders or scrollbars.
+The pdf view components takes a PDF url.
+'''
+
+[TST-pdf-view] 
+text = '''
+Assert that rendering a PDF from a url works.
+'''

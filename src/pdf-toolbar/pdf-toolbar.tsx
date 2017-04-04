@@ -17,7 +17,7 @@ export const PdfToolbar = () => (
 
         <div className="row">
             <div className="three columns">&nbsp;</div>
-            <div className="six columns">
+            <div className="six columns pdf-view">
                 <PdfView url={samplePDF} />
             </div>
             <div className="three columns">&nbsp;</div>
